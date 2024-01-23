@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/JsBarcode.all.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5 d-flex ">
+        <form action="" id="pForm" class="w-75 justify-content-center align-items-center row">
+            <div class="col-md-6">
+                <label class="form-label mt-2">التاريخ</label>
+                <input type="date" class="form-control" id="dateForm" name="dateForm">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label mt-2">الوردية</label>
+                <input type="number" class="form-control" id="shiftNumber" name="shiftNumber">
+            </div>
+            <div class="col-md-12">
+                <label class="form-label my-3">إسم</label>
+                <input type="text" class="form-control" id="mName" name="mName">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label my-3">عبوة</label>
+                <input type="number" class="form-control" id="numberOfItems" name="numberOfItems">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label my-3">ماكينة</label>
+                <input type="number" class="form-control" id="nMachine" name="nMachine">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label my-3">لون</label>
+                <input type="text" class="form-control" id="color" name="color">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label my-3">عامل</label>
+                <input type="text" class="form-control" id="employee" name="employee">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label my-3">جودة</label>
+                <input type="text" class="form-control" id="quality" name="quality">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label my-3">وزن</label>
+                <input type="number" class="form-control"id="weight" name="weight">
+            </div>
+            <div class="col-md-12">
+                <label class="form-label my-3">البار كود</label>
+                <input type="text" class="form-control"id="barcode" name="barcode">
+            </div>
+            <div class="col-md-12 mt-3">
+                <button type="button" onclick="generateLabel()" class="btn btn-primary w-25">
+                     تسجيل
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container mt-3">
+        <div id="printArea">
+            <table id="mainTable" class="table " >
+                <tbody id="tableContent"></tbody>
+                <!-- <label for="barcode">Barcode:</label>
+                <input type="text" id="barcode" name="barcode" > -->
+            </table>
+        </div>
+    </div>
+   
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
